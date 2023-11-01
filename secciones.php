@@ -42,40 +42,40 @@ function nav(){
         <div class="categorias">
           <div class="categorias-child"></div>
           <div class="varios">Varios</div>
-          <img class="separador-icon" alt="" src="./public/separador.svg" />
+          <img class="separador-icon" alt="" src="./imagenes/separador.svg" />
 
           <div class="mecanica">Mecánica</div>
-          <img class="separador-icon1" alt="" src="./public/separador1.svg" />
+          <img class="separador-icon1" alt="" src="./imagenes/separador1.svg" />
 
           <div class="electro">Electro</div>
-          <img class="separador-icon2" alt="" src="./public/separador2.svg" />
+          <img class="separador-icon2" alt="" src="./imagenes/separador2.svg" />
 
           <div class="refrigeracion">Refrigeriacion</div>
-          <img class="separador-icon3" alt="" src="./public/separador3.svg" />
+          <img class="separador-icon3" alt="" src="./imagenes/separador3.svg" />
 
           <div class="gas">GAS</div>
-          <img class="separador-icon4" alt="" src="./public/separador4.svg" />
+          <img class="separador-icon4" alt="" src="./imagenes/separador4.svg" />
 
           <div class="electricidad">Electricidad</div>
-          <img class="separador-icon5" alt="" src="./public/separador5.svg" />
+          <img class="separador-icon5" alt="" src="./imagenes/separador5.svg" />
 
           <div class="heramientas">Herramientas</div>
-          <img class="separador-icon6" alt="" src="./public/separador6.svg" />
+          <img class="separador-icon6" alt="" src="./imagenes/separador6.svg" />
 
           <div class="plomeria">Plomeria</div>
-          <img class="separador-icon7" alt="" src="./public/separador7.svg" />
+          <img class="separador-icon7" alt="" src="./imagenes/separador7.svg" />
 
           <div class="carpinteria">Carpinteria</div>
-          <img class="separador-icon8" alt="" src="./public/separador8.svg" />
+          <img class="separador-icon8" alt="" src="./imagenes/separador8.svg" />
 
           <div class="pintura">Pintura</div>
-          <img class="separador-icon9" alt="" src="./public/separador9.svg" />
+          <img class="separador-icon9" alt="" src="./imagenes/separador9.svg" />
 
           <div class="construccion">Construccion</div>
           <img
             class="separador-icon10"
             alt=""
-            src="./public/separador10.svg"
+            src="./imagenes/separador10.svg"
           />
 
           <div class="categorias1">Categorias</div>
@@ -97,11 +97,11 @@ function nav(){
         <div class="aceptamos-mercado-pago">
           Aceptamos Mercado Pago, transferencias y depositos bancarios.
         </div>
-        <img class="image-7-icon" alt="" src="./public/image-7@2x.png" />
+        <img class="image-7-icon" alt="" src="./imagenes/image-7@2x.png" />
 
-        <img class="image-8-icon" alt="" src="./public/image-8@2x.png" />
+        <img class="image-8-icon" alt="" src="./imagenes/image-8@2x.png" />
 
-        <img class="image-9-icon" alt="" src="./public/image-9@2x.png" />
+        <img class="image-9-icon" alt="" src="./imagenes/image-9@2x.png" />
       </div>
         ';}
 ?>

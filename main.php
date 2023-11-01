@@ -49,16 +49,16 @@ require "secciones.php";
         head()
         ?>
       </div>
-      <img class="image-6-icon" alt="" src="./public/image-6@2x.png" />
+      <img class="image-6-icon" alt="" src="./imagenes/image-6@2x.png" />
 
       <b class="insumos">.INSUMOS</b>
       <img
         class="herramientas-parnassa-1"
         alt=""
-        src="./public/herramientas-parnassa-1@2x.png"
+        src="./imagenes/herramientas-parnassa-1@2x.png"
       />
 
-      <img class="he2-1-icon" alt="" src="./public/he2-1@2x.png" />
+      <img class="he2-1-icon" alt="" src="./imagenes/he2-1@2x.png" />
 
       <div class="titulo-trabajos4">
         <div class="titulo-trabajos-child2"></div>
