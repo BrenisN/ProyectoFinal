@@ -1,3 +1,8 @@
+a:visited{
+  text-decoration: none;
+   color: white;
+}
+
 .footer22 {
   position: absolute;
   top: 0;
@@ -382,6 +387,7 @@
   width: 190px;
 }
 .buscar {
+  color: white;
   position: absolute;
   top: 11.02px;
   left: 39.86px;
@@ -393,13 +399,13 @@
 .registro74 {
   position: absolute;
   top: 8.81px;
-  left: 960px;
+  left: 1430px;
   width: 190px;
   height: 42.97px;
   cursor: pointer;
 }
 .registro74 {
-  top: 11.02px;
+  top: 8.81px;
   left: 1650px;
 }
 .header43,

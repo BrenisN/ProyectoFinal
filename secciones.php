@@ -2,12 +2,12 @@
 function head(){
     echo'
     <div class="header43"></div>
-    <img
+    <a href="main.php"><img
       class="rep-logo-1-222"
       alt=""
       src="./imagenes/logo-repar.png"
       id="rEPLOGO12"
-    />';}
+    /></a>';}
 
 function foot(){
     echo'

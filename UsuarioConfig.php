@@ -26,41 +26,31 @@ require "secciones.php";
         <div class="body20"></div>
         <div class="side-panel">
           <?php
-          nav();
+          //nav();
           ?>
         </div>
       </div>
       <div class="nav42">
         <div class="nav43"></div>
-        <div class="registro72" id="registroContainer1">
-          <div class="registro73"></div>
-            <a href="Login.php"><b class="buscar">Salir</b></a>
-          </div>
         <div class="registro74" id="registroContainer2">
           <div class="registro73"></div>
-            <a href="UsuarioConfig.php"><b class="buscar">Usuario</b></a>
-          </div>
+          <b class="buscar">Salir</b>
+        </div>
       </div>
       <div class="header42">
         <?php
         head()
         ?>
       </div>
-      <a href="Checkout.php"><img class="image-6-icon" alt="" src="./imagenes/image-6@2x.png" /></a>
 
-      <b class="insumos">.INSUMOS</b>
-      <img
-        class="herramientas-parnassa-1"
-        alt=""
-        src="./imagenes/herramientas-parnassa-1@2x.png"
-      />
 
-      <img class="he2-1-icon" alt="" src="./imagenes/he2-1@2x.png" />
-      <!-- Titulo de la pagina central -->
+
+
+
       <div class="titulo-trabajos4">
         <div class="titulo-trabajos-child2"></div>
         <div class="titulo-trabajos5">
-          <div class="trabajos4">Listado de Productos</div>
+          <div class="trabajos4">Configuracion de Usuario</div>
         </div>
       </div>
       
