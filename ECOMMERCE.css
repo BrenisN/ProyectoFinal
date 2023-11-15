@@ -1,3 +1,18 @@
+.body19 {
+  left: auto !important;
+  top: calc(50% - 528px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 1165px;
+  font-size: var(--font-size-12xl);
+  color: var(--color-darkslategray);
+}
+.body20 {
+  left: auto !important;
+  top: calc(50% - 582.5px);
+  background-color: var(--color-gray-200);
+  width: 1920px;
+  height: 1165px;
+}
 a:visited{
   text-decoration: none;
    color: white;
@@ -64,18 +79,11 @@ a:visited{
   top: 1431px;
   text-align: left;
 }
-.body20,
 .footer21,
 .form14 {
-  position: absolute;
+  position: static;
 }
-.body20 {
-  top: calc(50% - 582.5px);
-  left: calc(50% - 960px);
-  background-color: var(--color-gray-200);
-  width: 1920px;
-  height: 1165px;
-}
+
 .form14 {
   top: 0;
   left: 0;
@@ -341,18 +349,9 @@ a:visited{
   width: 384px;
   height: 1140px;
 }
-.body19,
 .nav43 {
-  position: absolute;
+  position: static;
   width: 1920px;
-}
-.body19 {
-  top: calc(50% - 528px);
-  left: calc(50% - 960px);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  height: 1165px;
-  font-size: var(--font-size-12xl);
-  color: var(--color-darkslategray);
 }
 .nav43 {
   top: 0;
@@ -435,14 +434,13 @@ a:visited{
 }
 .header42,
 .image-6-icon {
-  position: absolute;
   top: 0;
   left: 0;
   width: 1920px;
   height: 207px;
 }
 .image-6-icon {
-  top: 208px;
+  top: 6px;
   left: 1855px;
   width: 52px;
   height: 52px;
