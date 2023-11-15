@@ -224,3 +224,16 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE VIEW vista_productos AS
+SELECT 
+	p.idProducto AS id, 
+	p.nombre AS nombre, 
+	p.cantidad AS cantidad, 
+	p.precio AS  precio, 
+	p.porMayor AS porMayor, 
+	p.imagen AS imagen, 
+	c.nombre AS nombre, 
+	p.descripcion AS descripcion
+FROM productos p
+JOIN categorias c ON p.idcategoria = ca.idCategoria
