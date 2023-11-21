@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+  "header header"
+  "navBar navBar"
+  "sideBar listProd"
+  "footer footer";
+}
+
+.header{
+  grid-area: header;
+  background-color: #023047;
+  height: 200px;
+}
+
+.repLogo {
+  position: absolute;
+  top: 48px;
+  left: 742px;
+  width: 436px;
+  height: 111px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navBar {
+  grid-area: navBar;
+  background-color: #ffb703;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos al final (derecha) */
+  align-items: center;
+}
+
+.TextoBienvenida{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+  text-align: left;
+}
+
+.Titulo{
+  width: 79%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
+  color: #023047;
+}
+
+.navButtons {
+  display: flex;
+}
+
+.navButton {
+  background-color: #023047;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave de color */
+  margin-left: 10px; /* Espaciado entre los botones */
+  text-decoration: none;
+}
+
+/* Aplica un margen derecho solo al último botón */
+.navButton:last-child {
+  margin-right: 20px;
+}
+
+.navButton:hover {
+  background-color: #015a9e; /* Cambia el color al pasar el puntero por encima */
+}
+
+.sideBar{
+  grid-area: sideBar;
+  background-color: #90cce4;
+  height: 800px;
+  padding: 14px 14px 14px 14px;
+  border-radius: 3px;
+}
+
+.sideProd{
+  background-color: #ffb703;
+  height: 800px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catItem{
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 2px solid #023047;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.listProd{
+  grid-area: listProd;
+  background-color: white;
+  height: 800px;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: #219ebc;
+  height: 150px;
+}
+
+.iconos22 {
+  display: flex;
+  flex-direction: column; /* Cambiar la dirección principal a columna */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura del .footer */
+}
+
+/* Ajusta el estilo según sea necesario para cada ícono */
+.logo-facebook-icon22,
+.logo-ig-icon22,
+.logo-twitter-icon22{
+  margin: 0 10px 10px 10px; /* Espaciado opcional entre los íconos y el texto */
+  width: 50%; /* Reducción del 30% del ancho */
+  height: 50%; /* Mantiene la proporción de aspecto */
+}
+
+logo-registrado-icon22{
+  margin: 0 10px 10px 10px; /* Espaciado opcional entre los íconos y el texto */
+}
+
+.repar22 {
+  align-self: center; /* Espaciado opcional entre los íconos y el texto */
+  margin-left: 10px;
+}
+
+.iconos-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
