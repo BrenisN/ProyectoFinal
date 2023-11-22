@@ -103,14 +103,57 @@ body{
   border-bottom: 2px solid #023047;
   padding-bottom: 5px;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
-.listProd{
+.catItem:visited{
+  color: #023047;
+}
+
+.list-container {
+  text-align: center;
+}
+
+.list-container h2 {
+  font-size: 2em; /* El doble de grande */
+}
+
+.listProd {
   grid-area: listProd;
   background-color: white;
-  height: 800px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
+.item {
+  box-sizing: border-box;
+  width: calc(20% - 20px); /* Ancho del 20% menos el margen */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.quantity-dropdown {
+  margin-top: auto;
+}
+
+/* Estilos adicionales para alinear el botón en la parte inferior */
+.item button {
+  margin-top: auto;
+}
 .footer{
   grid-area: footer;
   background-color: #219ebc;

@@ -1,4 +1,8 @@
 <?php
+require "ConexionBD.php";
+?>
+
+<?php
 
 function head(){
     echo'
@@ -31,28 +35,61 @@ function sideBar(){
   echo'
       <div class="sideBar">
         <div class="sideProd">
-          <a class="catItem">Construccion</a>
-          <a class="catItem">Pintura</a>
-          <a class="catItem">Carpinteria</a>
-          <a class="catItem">Plomeria</a>
-          <a class="catItem">Herramientas</a>
-          <a class="catItem">Electricidad</a>
-          <a class="catItem">GAS</a>
-          <a class="catItem">Refrigeracion</a>
-          <a class="catItem">Electro</a>
-          <a class="catItem">Mecanica</a>
+          <a href="main.php?CATEGORIA=1" class="catItem">Construccion</a>
+          <a href="main.php?CATEGORIA=2" class="catItem">Pintura</a>
+          <a href="main.php?CATEGORIA=3" class="catItem">Carpinteria</a>
+          <a href="main.php?CATEGORIA=4" class="catItem">Plomeria</a>
+          <a href="main.php?CATEGORIA=5" class="catItem">Herramientas</a>
+          <a href="main.php?CATEGORIA=6" class="catItem">Electricidad</a>
+          <a href="main.php?CATEGORIA=7" class="catItem">GAS</a>
+          <a href="main.php?CATEGORIA=8" class="catItem">Refrigeracion</a>
+          <a href="main.php?CATEGORIA=9" class="catItem">Electro</a>
+          <a href="main.php?CATEGORIA=10" class="catItem">Mecanica</a>
         </div>
       </div>
       '
 ;}
 
-function listProd(){
-  echo'
-      <div class="listProd">
+function listProd($con) {
+  if(isset($_GET["CATEGORIA"])){
+    $cat = $_GET["CATEGORIA"];
+    $queryProd = "SELECT * FROM productos where idcategoria = ". $cat ;
+    $result = mysqli_query($con,$queryProd);
+    if ($result->num_rows > 0){
+      echo '<div class="list-container">
+      <h2>Categoria: '. $cat .'</h2>
+      <div class="listProd">';  
+    
+      while($row = $result->fetch_assoc()) {
+        echo '<div class="item">
+                <img src="'. $row["imagen"] .'">
+                <div class="itemContent">    
+                  <h3>'. $row["nombre"] .'</h3>
+                  <p>'. $row["descripcion"] .'</p>
+                  <p>Precio: $'. $row["precio"] .'</p>
+                  <div class="quantity-dropdown">
+                    <label for="quantity">Cantidad:</label>
+                    <select id="quantity" name="quantity">';
+        for ($i = 1; $i <= 10; $i++) {
+          echo '<option value="' . $i . '">' . $i . '</option>';
+        }
+        echo '      </select>
+                  </div>
+                  <br>
+                  <button>COMPRAR</button>
+                </div>
+              </div>';     
+      }
 
-      </div>
-      '
-;}
+      echo '</div></div>';
+    } else {
+      echo 'No se encontraron productos';
+    }
+    $con->close();
+  } else {
+    echo ' No hay productos para la categoria';
+  }
+}
 
 function footer(){
   echo'

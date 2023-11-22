@@ -15,7 +15,7 @@ require "secciones.php";
       head();
       navBar("LISTADO DE PRODUCTOS","Usuario","Salir");
       sideBar();
-      listProd();
+      listProd($con,"Construccion");
       footer();
     ?>
   </div>
